@@ -7,7 +7,8 @@
 
 # testing
 /coverage
-
+Text_analyser.docx
+Demo.docx
 # production
 /build
 
