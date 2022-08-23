@@ -1,4 +1,54 @@
 
+# Text Analyser
+
+This is very basic level project in ReactJS which having functionality to change lowercase character to uppercase character
+,uppercase to lowercase
+,formating the word ,
+calculate reading time,
+ and such similar type of functionality having in this app
+
+
+ 
+## Tech Stack
+Bootstrap ,React JS
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/jagdish4501/Text_analyser.git
+```
+
+Go to the project directory
+
+```bash
+  cd text_analyser
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+
+## Roadmap How to  I Create React App
+
+```bash
+npx create-react-app my-app
+cd my-app
+npm start
+```
+
+
 # Lessons From This Project
 during this project i am learn that how single page application
 working 
