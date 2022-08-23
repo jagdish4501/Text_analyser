@@ -1,70 +1,59 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Lessons From This Project
+during this project i am learn that how single page application
+working 
+and become aware of react js
+### what is Function and Class Components
+This function is a valid React component because it accepts a 
+single “props” (which stands for properties) object argument with data and returns a React element. We call such components “function components” because they are literally JavaScript functions.
+```bash
+  function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+```
+OR
+```bash
+  const Welcome = (props)=> {
+  return <h1>Hello, {props.name}</h1>;
+}
+```
 
-## Available Scripts
+### How React Rendering a Component
+Previously, we only encountered React elements that represent DOM tags:
+like
+```bash
+const element = <div />;
+```
+However, elements can also represent user-defined components:
+like
+```bash
+const element = <Welcome name="Sara" />;
+```
+And Now this user-defined-component are rendored 
+on screen
+by using this function
+```bash
+ReactDOM.render(
+  <React.StrictMode>
+    <element />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+```
+ **All React components must act like pure functions with respect to their props
+ that is function must never modify its own props.
+ ## React Router
+Create React App doesn't include page routing.
+React Router is the most popular solution. we have to install
+ ## React Hooks
+ ### Why use state and not variables in React?
+ Why use state and not variables in React?
+The reason is if you useState it rerenders the view.
+ Variables by themselves only change bits in memory and the state of your app can get out of sync with the view.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Hooks allow function components to have access to state and other React features.
+Because of this, class components are generally no longer needed.
+eg.useState, useEffect etc
+## React Events
+Just like HTML DOM events, React can perform actions based on user events.
+React has the same events as HTML: click, change, mouseover etc.
