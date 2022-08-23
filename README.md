@@ -97,7 +97,6 @@ Create React App doesn't include page routing.
 React Router is the most popular solution. we have to install
  ## React Hooks
  ### Why use state and not variables in React?
- Why use state and not variables in React?
 The reason is if you useState it rerenders the view.
  Variables by themselves only change bits in memory and the state of your app can get out of sync with the view.
 
